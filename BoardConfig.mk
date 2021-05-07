@@ -31,5 +31,8 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 # Kernel
 TARGET_KERNEL_CONFIG := aicp_defconfig
 
+#TWRP Support
+-include device/twrp/fajita/twrp.mk
+
 # inherit from the proprietary version
 -include vendor/oneplus/fajita/BoardConfigVendor.mk
